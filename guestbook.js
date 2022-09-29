@@ -1,13 +1,13 @@
 /**
  * Web application
  */
-const apiUrl = 'https://us-south.functions.appdomain.cloud/api/v1/web/40544999-7642-4020-9789-dbd594085b83/guestbook/';
+const apiUrl = 'https://eu-gb.functions.appdomain.cloud/api/v1/web/pallavir%40skillup.tech_dev/guestbook/';
 const guestbook = {
   // retrieve the existing guestbook entries
   get() {
     return $.ajax({
       type: 'GET',
-      url: 'https://us-south.functions.appdomain.cloud/api/v1/web/40544999-7642-4020-9789-dbd594085b83/guestbook/read-guestbook-entries-sequence',
+      url: 'https://eu-gb.functions.appdomain.cloud/api/v1/web/pallavir%40skillup.tech_dev/guestbook/read-guestbook-entries-sequence',
       dataType: 'json'
     });
   },
@@ -16,7 +16,7 @@ const guestbook = {
     console.log('Sending', name, email, comment)
     return $.ajax({
       type: 'PUT',
-      url: 'https://us-south.functions.appdomain.cloud/api/v1/web/40544999-7642-4020-9789-dbd594085b83/guestbook/save-guestbook-entry-sequence',
+      url: 'https://eu-gb.functions.appdomain.cloud/api/v1/web/pallavir%40skillup.tech_dev/guestbook/save-guestbook-entry-sequence',
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         name,
